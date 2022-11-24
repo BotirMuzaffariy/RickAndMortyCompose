@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id("com.apollographql.apollo3").version("3.0.0")
 }
 
 android {
@@ -44,6 +45,9 @@ android {
             excludes += '/META-INF/{AL2.0,LGPL2.1}'
         }
     }
+    apollo {
+        packageName.set("uz.lazydevv.rickandmorty")
+    }
 }
 
 dependencies {
@@ -60,4 +64,12 @@ dependencies {
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_ui_version"
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_ui_version"
     debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_ui_version"
+
+    // apollo GraphQL runtime
+    implementation "com.apollographql.apollo3:apollo-runtime:3.0.0"
+
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.5.1'
+
+    // coil for compose
+    implementation "io.coil-kt:coil-compose:2.2.2"
 }
