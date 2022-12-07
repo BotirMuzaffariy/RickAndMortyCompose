@@ -12,6 +12,7 @@ query getCharacters {
             species
             gender
             image
+            status
         }
     }
 }

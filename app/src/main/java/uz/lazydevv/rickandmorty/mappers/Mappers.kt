@@ -7,5 +7,7 @@ fun GetCharactersQuery.Result?.toCharacterM() = CharacterM(
     name = this?.name ?: "",
     species = this?.species ?: "",
     gender = this?.gender ?: "",
-    image = this?.image ?: ""
+    image = this?.image ?: "",
+    isAlive = this?.status == "Alive",
+    status = this?.status ?: ""
 )

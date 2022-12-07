@@ -23,7 +23,8 @@ class MainActivity : ComponentActivity() {
             RickAndMortyTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colors.background) {
-                    MainActivityUI(viewModel.uiState)
+//                    ScreenSample1(viewModel.uiState)
+                    ScreenSample2(viewModel.uiState)
                 }
             }
         }

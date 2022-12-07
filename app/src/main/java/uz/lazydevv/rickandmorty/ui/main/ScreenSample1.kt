@@ -31,7 +31,7 @@ import coil.compose.AsyncImage
 import uz.lazydevv.rickandmorty.models.CharacterM
 
 @Composable
-fun MainActivityUI(uiState: MainActivityUiState) {
+fun ScreenSample1(uiState: MainActivityUiState) {
     Box(
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
